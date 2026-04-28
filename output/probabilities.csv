@@ -1,0 +1,9 @@
+event,probability,category
+Forest fire,0.0506,Type of fire
+Lanscape fire,0.1817,Type of fire
+Fire in county Harju maakond,0.3224,County
+Fire in county Ida-Viru maakond,0.2394,County
+Fire in county Tartu maakond,0.0725,County
+Fire in county Läti Vabariik rarest,0.0001,County
+Fire in April most dangerous season,0.4129,Season
+Fire in February least dangerous season,0.0017,Season
