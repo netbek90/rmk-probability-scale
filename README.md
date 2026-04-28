@@ -1,25 +1,31 @@
-markdown
 # RMK Probability Scale
 
-## what
-Aim to get some visualisation what clearly shows probability chances: 0.05, 0.41 etc.
+Test assignment for RMK Data Team Internship 2026.
 
-## Source
-Data is taken from (https://opendata.riik.ee) — ds "Metsa- ja maastikutulekahjud 2014–2025" (Päästeamet) 
-`data/fires.csv`
+## What is this
 
-##what counted
-- Probability that fire is in forest/landscape
-- Probability by counties
-- Probability by months
-- Mean and median value of fire square
+A probability scale for forest and landscape fires in Estonia (2014-2025).
+The goal is to help readers intuitively understand probability values like 0.05, 0.41, etc.
 
-##how to run
+## Data source
+
+Data from [Estonian Open Data Portal](https://opendata.riik.ee) — dataset "Metsa- ja maastikutulekahjud 2014-2025" (Päästeamet, Estonian Rescue Board).
+File: `data/fires.csv`, 11 757 fire incident records.
+
+## What was calculated
+
+- Probability that a fire is forest vs. landscape
+- Probability of fire by county (Harju, Ida-Viru, etc.)
+- Probability of fire by month (seasonality)
+- Mean and median burned area of forest fires
+
+## How to run
+
 ```bash
 pip install -r requirements.txt
-python process.py        # counts probabilities → output/probabilities.csv
-python visualize.py      # plot draw → output/probability_scale.png
-example
+python process.py        # calculates probabilities → output/probabilities.csv
+python visualize.py      # draws scale → output/probability_scale.png
+Example result
 https://output/probability_scale.png
 
 Project structure
@@ -28,19 +34,14 @@ RMK/
 ├── data/
 │   └── fires.csv                    # raw data
 ├── output/
-│   ├── probabilities.csv            # Probabilities
-│   └── probability_scale.png        # plot
+│   ├── probabilities.csv            # calculated probabilities
+│   └── probability_scale.png        # finished scale
 ├── explore.py                       # data exploration
-├── process.py                       # counting of probabilities
-├── visualize.py                     # plot draw
+├── process.py                       # probability calculations
+├── visualize.py                     # scale visualization
 ├── requirements.txt
 ├── README.md
-└── thoughts.md                      # for future improvements
+└── thoughts.md                      # future improvements
+
 Contact
-[vassi.djakov@gmail.com]
-
-text
-
-
-
----
+vassi.djakov@gmail.com
