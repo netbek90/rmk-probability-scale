@@ -39,7 +39,7 @@ RMK/
 ├── explore.py                       # data exploration
 ├── process.py                       # probability calculations
 ├── visualize.py                     # scale visualization
-├── requirements.txt
+├── bayes.py                     # bayes apply
 ├── README.md
 └── thoughts.md                      # future improvements
 
